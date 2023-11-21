@@ -1,9 +1,17 @@
 import React, { useState } from "react";
-import axios, { AxiosResponse } from "axios";
+
 export const Search = () => {
   const [searchVal, setSearchVal] = useState<string>("");
   const [responseVal, setResponseVal] = useState<{ [key: string]: string }>({});
-  const submitSearch = () => {};
+
+  const submitSearch = () => {
+    fetch(`http://localhost:8000/${searchVal}`)
+      .then((data) => data.json())
+      .then((res) => {
+        setResponseVal(res);
+      })
+      .catch((err) => console.log(err));
+  };
   return (
     <div>
       <input

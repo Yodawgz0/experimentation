@@ -34,7 +34,6 @@ export default function App() {
   const [secondName, setSecondName] = useState<string>("");
   const handleChange = useCallback(() => {
     setTitle(title + "2");
-    // eslint-disable-next-line react-hooks/exhaustive-deps
   }, [numCHange]);
 
   const fullName = firstName + " " + secondName;
@@ -50,10 +49,9 @@ export default function App() {
         memo={true}
       />
       <Movie title={title} releaseDate="December 15, 1995" memo={false} />
-
       <button onClick={() => handleChange()}>Check ifnum updated</button>
       <button onClick={() => setNum(numCHange + 1)}>Enable UseCallback</button>
-      {/* fact that we don't need useeffect */}
+      //fact that we don't need useeffect
       <div className="d-flex flex-row mb-2 mt-4">
         <p className="me-5">First name: </p>
         <input onChange={(e) => setFirstName(e.target.value)} />
