@@ -1,6 +1,6 @@
 import React, { useCallback, useState, createContext } from "react";
 import { Acomp } from "./extraComp/Acomp";
-import { Search } from "./extraComp/Search";
+// import { Search } from "./extraComp/Search";
 import "./styles.css";
 interface props {
   title: string;
@@ -61,7 +61,7 @@ export default function App() {
         <input onChange={(e) => setSecondName(e.target.value)} />
       </div>
       <p>{fullName}</p>
-      <Search />
+      {/* <Search /> */}
     </>
   );
 }

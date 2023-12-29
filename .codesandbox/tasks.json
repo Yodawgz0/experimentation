@@ -1,0 +1,47 @@
+{
+  // These tasks will run in order when initializing your CodeSandbox project.
+  "setupTasks": [
+    {
+      "name": "Install Dependencies",
+      "command": "npm install"
+    }
+  ],
+
+  // These tasks can be run from CodeSandbox. Running one will open a log in the app.
+  "tasks": {
+    "start": {
+      "name": "start",
+      "command": "npm run start",
+      "runAtStart": true
+    },
+    "start-frontend": {
+      "name": "start-frontend",
+      "command": "npm run start-frontend",
+      "runAtStart": false
+    },
+    "start-backend": {
+      "name": "start-backend",
+      "command": "npm run start-backend",
+      "runAtStart": false
+    },
+    "build": {
+      "name": "build",
+      "command": "npm run build",
+      "runAtStart": false
+    },
+    "test": {
+      "name": "test",
+      "command": "npm run test",
+      "runAtStart": false
+    },
+    "eject": {
+      "name": "eject",
+      "command": "npm run eject",
+      "runAtStart": false
+    },
+    "npm i @types/react-router-dom": {
+      "name": "npm i @types/react-router-dom",
+      "command": "npm i @types/react-router-dom"
+    }
+  }
+}
