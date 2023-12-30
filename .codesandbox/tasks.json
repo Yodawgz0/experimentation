@@ -12,32 +12,30 @@
     "start": {
       "name": "start",
       "command": "npm run start",
-      "runAtStart": true
+      "runAtStart": true,
+      "preview": {
+        "port": 3000
+      }
     },
     "start-frontend": {
       "name": "start-frontend",
-      "command": "npm run start-frontend",
-      "runAtStart": false
+      "command": "npm run start-frontend"
     },
     "start-backend": {
       "name": "start-backend",
-      "command": "npm run start-backend",
-      "runAtStart": false
+      "command": "npm run start-backend"
     },
     "build": {
       "name": "build",
-      "command": "npm run build",
-      "runAtStart": false
+      "command": "npm run build"
     },
     "test": {
       "name": "test",
-      "command": "npm run test",
-      "runAtStart": false
+      "command": "npm run test"
     },
     "eject": {
       "name": "eject",
-      "command": "npm run eject",
-      "runAtStart": false
+      "command": "npm run eject"
     },
     "npm i @types/react-router-dom": {
       "name": "npm i @types/react-router-dom",

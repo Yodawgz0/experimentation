@@ -6,8 +6,7 @@ const FormSearch = () => {
   return (
     <>
       <div>
-        Hello
-        <input />
+        <input onChange={(e) => setSearchParams(e.target.value)} />
       </div>
     </>
   );
