@@ -1,6 +1,6 @@
 // Acomp.js
 import React, { useContext } from "react";
-import { AcompContext } from "./Home";
+import { AcompContext } from "../pages/Home";
 
 export const Acomp = () => {
   const { numCHange, setNum } = useContext(AcompContext); // Access numCHange and setNumCHange from the context

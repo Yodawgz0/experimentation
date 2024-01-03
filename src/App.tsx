@@ -1,7 +1,7 @@
 // Import the required components and hooks from React Router
 import { BrowserRouter, Routes, Route } from "react-router-dom";
-import Home from "./extraComp/Home";
-import FormSearch from "./extraComp/FormSearch";
+import Home from "./pages/Home";
+import FormSearch from "./pages/FormSearch";
 import "./styles.css";
 import React from "react";
 function App() {
