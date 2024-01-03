@@ -1,5 +1,5 @@
 import React, { useCallback, useState, createContext } from "react";
-import { Acomp } from "./Acomp";
+import { Acomp } from "../extraComp/Acomp";
 // import { Search } from "./extraComp/Search";
 interface props {
   title: string;
