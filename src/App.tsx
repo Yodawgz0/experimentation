@@ -3,6 +3,7 @@ import { BrowserRouter, Routes, Route } from "react-router-dom";
 import Home from "./extraComp/Home";
 import FormSearch from "./extraComp/FormSearch";
 import "./styles.css";
+import React from "react";
 function App() {
   return (
     <BrowserRouter>
