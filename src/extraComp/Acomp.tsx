@@ -1,4 +1,3 @@
-// Acomp.js
 import React, { useContext } from "react";
 import { AcompContext } from "../pages/Home";
 
