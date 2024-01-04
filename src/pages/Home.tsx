@@ -38,6 +38,13 @@ export default function Home() {
   const fullName = firstName + " " + secondName;
   return (
     <>
+      <a href="/form">
+        {" "}
+        <button className=" bg-black text-white mb-3">
+          Navigate to Form Page
+        </button>
+      </a>
+
       <AcompContext.Provider value={{ numCHange, setNum }}>
         <Acomp />
         <p> This is the incremented {numCHange}</p>
