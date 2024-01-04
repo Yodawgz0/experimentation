@@ -57,7 +57,6 @@ export default function Home() {
       <Movie title={title} releaseDate="December 15, 1995" memo={false} />
       <button onClick={() => handleChange()}>Check ifnum updated</button>
       <button onClick={() => setNum(numCHange + 1)}>Enable UseCallback</button>
-      {/* //fact that we don't need useeffect */}
       <div className="d-flex flex-row mb-2 mt-4">
         <p className="me-5">First name: </p>
         <input onChange={(e) => setFirstName(e.target.value)} />
@@ -66,7 +65,7 @@ export default function Home() {
         <p className="me-5">Last name: </p>
         <input onChange={(e) => setSecondName(e.target.value)} />
       </div>
-      <p>{fullName}</p>
+      <p>fact that we dont need useeffect : {fullName}</p>
       {/* <Search /> */}
     </>
   );
